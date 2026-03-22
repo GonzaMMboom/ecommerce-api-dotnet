@@ -1,0 +1,62 @@
+# .gitignore es un ARCHIVO (no una carpeta): lista patrones que Git no debe versionar.
+# No muevas bin/obj/.env a ninguna carpeta; siguen en el proyecto y solo se ignoran aqui.
+
+## Secretos y entorno local
+.env
+**/.env
+*.pfx
+*.key
+
+## Build .NET
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+**/bin/
+**/obj/
+
+## Visual Studio / VS Code
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+## Rider
+.idea/
+*.sln.iml
+
+## NuGet
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+
+## Publicacion
+publish/
+**/PublishProfiles/*.pubxml.user
+*.publishproj
+
+## Tests / cobertura
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.json
+coverage*.xml
+*.coverage
+*.coveragexml
+
+## OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## Otros
+*.cache
+project.lock.json
+project.fragment.lock.json
+artifacts/
