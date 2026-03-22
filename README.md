@@ -62,7 +62,7 @@ EcommerceApi.Api/appsettings.json
 Configurar variables JWT:
 Crear archivo .env basado en .env.example
 
-Crear migraciones (si no existen):
+Crear migraciones:
 dotnet ef migrations add InitialCreate --project EcommerceApi.Infrastructure --startup-project EcommerceApi.Api
 
 Aplicar migraciones:
