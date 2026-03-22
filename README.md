@@ -71,10 +71,6 @@ dotnet ef database update --project EcommerceApi.Infrastructure --startup-projec
 Ejecutar la API:
 dotnet run --project EcommerceApi.Api
 
-## Git y `.gitignore`
-
-`.gitignore` en la raíz del repositorio es un **archivo** (no una carpeta): define **patrones** para que Git no versione salidas de compilación (`bin/`, `obj/`), secretos (`.env`), carpetas del IDE, etc. **No debes mover** esos archivos a ninguna carpeta especial; siguen donde los genera el tooling y Git simplemente los ignora.
-
 ## Endpoints principales
 
 - `POST /api/Usuario` (registro, público)
